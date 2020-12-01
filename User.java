@@ -1,5 +1,6 @@
 package theUsers;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.UUID;
 
@@ -14,9 +15,9 @@ public class User
 	private String unit;
 	private String StarLev;
 	private String registrationNum;
-	//private String info;
-	private String[] info;
+	//private static String[] info;
 	private char gender;
+	
 	
 	User(String Rank, String fName, String lName,String mName,String registrationNum)
 	{
@@ -25,62 +26,59 @@ public class User
 		this.lName=lName;
 		this.mName=mName;
 		this.registrationNum=registrationNum;
-		this.info=info;
+
 	}
 	
 	public static void main (String[]args)
 	{
-		
-		System.out.println("Please enter your Rank.\n");
-		Scanner Rank=new Scanner(System.in);
-		Rank.nextLine();
-				
-		
 		//take user info
 		System.out.println("Welcome to the jccf E-Learning Platform.\n\n");
+		//list to store user info
+		ArrayList<String> info=new ArrayList<String>();
+		
+		System.out.println("Please enter your Rank.\n");
+		Scanner Rank=new Scanner(System.in);		
+		info.add(Rank.next());
 		
 		System.out.println("Please enter your first name.\n");
 		Scanner fName=new Scanner(System.in);
-		fName.nextLine();
-		//info.append(fName);
+		info.add(fName.next());
 		
 		System.out.println("Please enter your last name.\n");
 		Scanner lName=new Scanner(System.in);
-		lName.nextLine();
-	
+		info.add(lName.next());
 		
 		System.out.println("Please enter your middle name.\n");
 		Scanner mName=new Scanner(System.in);
-		mName.nextLine();
+		info.add(mName.next());
 		
 		System.out.println("Please enter your Cadet Unit's name.\n");
 		Scanner unit=new Scanner(System.in);
-		unit.nextLine();
+		info.add(unit.next());
 		
 		System.out.println("Please enter your current start level.\n");
 		Scanner StarLev=new Scanner(System.in);
-		StarLev.nextLine();
-		
+		info.add(StarLev.next());
+					
+				
+		System.out.println(info);
+				
 		//id number generator
 				/*if (Rank.equals("Cdt"))
 						{
 					    int odd[]= {1,3,5,7,9};
 						UUID Id=UUID.randomUUID();
 						
-						
-						
 						}*/
-		
-		
 	}
 	
-	//functions
-	
-			public String getFirstName()
-			{
-				return fName;
-			}
-		
+	//getter functions
+	public String getFirstName()
+	{
+		return fName;
+	}
+
+			
 		public String getMiddleName()
 			{
 				return mName;
