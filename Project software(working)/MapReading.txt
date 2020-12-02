@@ -1,0 +1,75 @@
+What is map used by cadets predominantly?
+(a)Topography
+(b)Street
+(c)Arial
+a
+How do you read grid references?
+(a)Northings Eastings
+(b)Eastings Northings 
+(c)Horizantally Vertically
+b
+What's the most accurate grid references?
+(a)4
+(b)8
+(c)6
+c
+How many degrees are added or subtracted during back bearing?
+(a)120 degrees
+(b)180 degrees
+(c)270 degrees
+b
+How do store a map?
+(a)plastic bag
+(b)card board
+(c)on a shelf
+a
+What is the true north?
+(a)north on a map
+(b)north your position
+(c)direction of North Pole
+c
+Why do soldiers need map reading?
+(a)to traverse the terraine
+(b)promotion
+(c)to teach others
+a
+What is the name of the compass typically used by a cadet?
+(a)Magnetic compass
+(b)Silva compass
+(c)Gooden compass
+b
+What lines are used to tell the height on a map?
+(a)isatopes
+(b)contours
+(c)Northings
+c
+Which is not a method to set a map?
+(a)by land mark
+(b)compass
+(c)contours
+c
+Which is not a method to measure distance?
+(a)km
+(b)road
+(c)range
+a
+What structure bulges out?
+(a)convex
+(b)concave
+(c)plateau
+b
+What are the measurements on a map for distance?
+(a)km
+(b)cm
+(c)m
+b
+How is the trig station represented by n a map?
+(a)blue square
+(b)red circle
+(c)yellow triangle
+c
+How is the woodland represented by a map?
+(a)green rectangle
+(b)brown rectangle
+(c)small trees
+a
