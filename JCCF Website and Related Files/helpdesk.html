@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>Help Desk</title>
+
+
+<h1><center>JAMAICA COMBINED CADET FORCE</h1></center>
+<h2><center>Welcome to the E-Learning Help Desk</h2></center>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 26px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a  href="C:\Users\HP\Desktop\JCCF Website and Related Files\UploadShell.html">Home</a></li>
+  <li><a href="https://www.cadetforceja.org/content/about-us">About Us</a></li>
+  <li><a href="C:\Users\HP\Desktop\JCCF Website and Related Files\login.html">Login</a></li>
+  <li><a href="C:\Users\HP\Desktop\JCCF Website and Related Files\signup.html">Sign Up</a></li>
+  <li><a href="https://www.cadetforceja.org/content/join-jccf">Join Us</a></li>
+  <li><a href="https://www.cadetforceja.org/contact">Contact Us</a></li>
+  <li><a href="C:\Users\HP\Desktop\JCCF Website and Related Files\announcements.html">Announcements</a></li>
+  <li><a class="active" href="C:\Users\HP\Desktop\JCCF Website and Related Files\helpdesk.html">Help Desk</a></li>
+  <li><a href="C:\Users\HP\Desktop\JCCF Website and Related Files\contactdev.html">Contact the Developers</a></li>
+  <li><a href="C:\Users\HP\Desktop\JCCF Website and Related Files\faq.html">FAQ</a></li>
+
+<br>
+<br>
+</ul>
+</style>
+
+<br>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 450px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2></h2>
+
+<div class="row">
+  <div class="column left" style="background-color:white;">
+    <br>
+    <canvas id="canvas" width="250" height="250"
+     style="background-color:white">
+     </canvas>
+     <br>
+     <br>
+
+
+		<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<b><center><div id="txt"></div></center>
+
+  </div>
+  <div class="column right" style="background-color:#d7def4";>
+  
+	<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=comment]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 18px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .submitbtn {
+  float: left;
+  width: 50%;
+}
+
+
+
+/* Add padding to container elements */
+.container {
+  padding: 10px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .submitbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <b><center><p>COMPLETE THE FIELDS TO SUBMIT A QUERY</p></center></b>
+    <hr>
+
+    <label for="idnum"><b>ID Number</b></label>
+    <input type="text" placeholder="Enter ID Number" name="idnum" required>
+	
+	<label for="querytopic"><b>Query Subject</b></label>
+    <input type="text" placeholder="Enter Query Subject" name="querytopic" required>
+
+
+    <label for="comment"><b>Comment</b></label>
+    <input type="text" placeholder="Your limit is 250 characters." maxlength="10" name="comment" required>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="submitbtn">Submit Comment</button>
+   	 </div>
+ 	 </div>
+	</form>
+ 	</div>
+	</div>
+
+<br>
+<br>
+
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000); 
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script>
+
+<br>
+<br>
+
+<b><center><div id="txt"></div></center></b>
+
+</head>
+</body>
+</html>
