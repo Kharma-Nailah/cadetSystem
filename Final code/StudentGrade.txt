@@ -1,0 +1,4 @@
+9339,38%,Field Craft test
+9619,40%,Service Knowledge test
+9619,62%,Map Reading test
+9619,42%,Field Craft test
