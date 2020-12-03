@@ -1,0 +1,30 @@
+What is the fire Drill?
+(a)run
+(b)hide
+(c)fight
+a
+What is blue?
+(a)dirt
+(b)sky
+(c)lava
+b
+What is yellow?
+(a)cow
+(b)lava
+(c)Sun
+c
+What does the N stand for in the cardinal points?
+(a)North
+(b)East
+(c)West
+a
+What does the red light mean?
+(a)Go
+(b)Slow down
+(c)Stop
+c
+What field craft?
+(a)weapon training
+(b)fire training
+(c)field training
+c
